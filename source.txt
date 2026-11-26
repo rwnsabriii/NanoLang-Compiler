@@ -1,0 +1,28 @@
+func sum(a, b) {
+    let int result;
+
+    result = a + b;
+
+    return result;
+}
+
+let int i;
+let int total;
+let int value;
+
+i = 1;
+total = 0;
+
+while (i <= 5) {
+    read(value);
+    total = sum(total, value);
+    i = i + 1;
+}
+
+print(total);
+
+if (total >= 100) {
+    print(1);
+} else {
+    print(0);
+}
